@@ -1,0 +1,44 @@
+EC-556 Advanced Computer Architecture
+Solutions to Project 8 : OpenMP Program(s) Version 1.0 05/02/2014
+
+-----------------------------------------------------------------------
+
+Contact:
+Kapil Agarwal
+B.Tech. Computer Science & Engineering
+IIT Roorkee
+
+-----------------------------------------------------------------------
+
+NOTE: All C files should have read permissions, All Bash files should 
+have read and  execute permissions
+
+----------------------------------------------------------------------
+
+Q. 17.2
+
+-----------------------------------------------------------------------
+
+Q. 17.8 - Monte Carlo method for approximation of value of Pi
+
+There are 2 files namely : pi.c and pi.sh
+pi.c contains the actual code which implements the Monte Carlo method
+
+To compile pi.c - 
+Type "make pi"
+
+To run pi-
+Type "./pi <number of samples> <number of threads>"
+
+pi.sh is a bash script which automatically compiles pi.c and executes it 
+for different values of samples and threads.
+
+To run pi.sh-
+Type "./pi.sh"
+
+The result shows the count of coordinates inside the circle, the number of
+samples, and the percentage error in the value of Pi.
+
+-------------------------------------------------------------------------
+
+Q. 17.10 - Sieve of Eratosthenes

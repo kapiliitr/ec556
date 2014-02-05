@@ -42,3 +42,18 @@ samples, and the percentage error in the value of Pi.
 -------------------------------------------------------------------------
 
 Q. 17.10 - Sieve of Eratosthenes
+
+There are 2 files namely : sieve.c and sieve.sh
+sieve.c contains the actual code which implements the Sieve of Eratosthenes
+in both serial and parallel modes
+
+Type "make sieve"
+Type "./sieve <max num> <num threads>"
+
+sieve.sh is a bash script which automatically compiles sieve.c and executes it 
+for different values of num and threads.
+
+Type "./sieve.sh"
+
+The result shows the max num, num of threads and speedup.
+

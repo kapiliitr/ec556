@@ -15,7 +15,7 @@ main(int argc, char *argv[])
 
   if(argc != 3)
   {
-    printf("Usage: ./pi <num_samples> <num_threads>\n");
+    printf("Usage: %s <num_samples> <num_threads>\n",argv[0]);
     exit(-1);
   }
 

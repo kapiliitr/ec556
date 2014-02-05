@@ -86,7 +86,7 @@ int main(int argc, char *argv[])
 
   if(argc != 3)
   {
-    printf("Usage: ./gauss <max num> <num threads>\n");
+    printf("Usage: %s <max num> <num threads>\n",argv[0]);
     exit(-1);
   }
 

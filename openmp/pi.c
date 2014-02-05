@@ -2,6 +2,7 @@
 #include <stdlib.h> 
 #include "omp.h"
 #include <math.h>
+#include <limits.h>
 
 main(int argc, char *argv[]) 
 { 
@@ -38,6 +39,6 @@ main(int argc, char *argv[])
   } 
   pi = 4.0 * (double)count / (double)samples; 
   error = fabs(pi-M_PI)*100/M_PI;
-  printf("Count = %d, Samples = %d, Error: %7.5f%\n", count, samples, error); 
+  printf("Count = %d, Samples = %d, Error: %7.5f%%\n", count, samples, error); 
 } 
 

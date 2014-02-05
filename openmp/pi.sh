@@ -3,7 +3,7 @@
 i=1
 n=10
 t=2
-while [ $i -le 10 ]
+while [ $i -lt 10 ]
 do
   echo "Num-samples: $n, Num-threads: $t"
   ./pi $n $t

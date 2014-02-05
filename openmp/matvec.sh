@@ -1,5 +1,7 @@
 #!/bin/bash
 
+make matvec
+
 i=1
 m=1000
 n=10
@@ -11,3 +13,5 @@ do
   t=$[t * 2]
   i=$[i + 1]
 done
+
+rm -rf matvec.o matvec

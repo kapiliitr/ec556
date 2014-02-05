@@ -6,7 +6,7 @@
 # Date : 3 Feb 2014
 #
 
-FILES = pi matvec gauss sieve2
+FILES = pi matvec gauss sieve
 
 CC = gcc
 CFLAGS = -fopenmp

@@ -1,6 +1,8 @@
 EC-556 Advanced Computer Architecture
 Solutions to Project 8 : OpenMP Program(s) Version 1.0 05/02/2014
 
+Book: Parallel Programming in C with MPI and OpenMP by M. J. Quinn
+
 -----------------------------------------------------------------------
 
 Contact:
@@ -11,11 +13,13 @@ IIT Roorkee
 -----------------------------------------------------------------------
 
 NOTE: All C files should have read permissions, All Bash files should 
-have read and  execute permissions
+have read and execute permissions
 
 ----------------------------------------------------------------------
 
 Q. 17.2
+
+Solutions are in pragma.txt
 
 -----------------------------------------------------------------------
 
@@ -71,7 +75,7 @@ Type "./matvec <rows> <cols> <threads>"
 matvec.sh is a bash script which automatically compiles matvec.c and executes 
 it for different dimensions of matrix and number of threads.
 
-Type "./mavitec.sh"
+Type "./matvec.sh"
 
 The result shows the num of rows in the vector, num of threads and speedup.
 

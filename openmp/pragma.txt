@@ -1,0 +1,27 @@
+Solution to Problem 17.2
+
+a. #pragma omp parallel for
+
+b. The total number of iterations is not known beforehand. 
+   So, it cannot be parallelized.
+
+c. It depends on the implementation of the function foo(). 
+   If it does not have any undesired effects-
+   #pragma omp parallel for 
+
+d. Same as (c). It depends on the implementation of the function 
+   foo(). If it does not have any undesired effects-
+   #pragma omp parallel for 
+
+e. Since the loop contains a break statement, it cannot be 
+   parallelized
+
+f. #pragma omp parallel for reduction (+:dotp)
+
+g. i varies from k to 2*k => i-k varies from 0 to k. So, there 
+   are no data dependencies.
+   #pragma omp parallel for
+
+h. i varies from k to n => i-k varies from 0 to n-k. If n>=2*k, 
+   iterations become dependant on one another, so it cannot be 
+   paralleized.

@@ -2,5 +2,6 @@
 !.gitignore
 !*.c
 !*.sh
+!*.txt
 !Makefile
 !README*

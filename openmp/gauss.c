@@ -4,7 +4,7 @@
 #include<math.h>
 #include<sys/time.h>
 
-#define ERROR 1.0e-9
+#define ERROR 1.0e-6
 
 int main(int argc, char *argv[])
 {
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
   if(argc != 3)
   {
-    printf("Usage: ./gauss <num vars> <num threads>\n");
+    printf("Usage: %s <num vars> <num threads>\n",argv[0]);
     exit(-1);
   }
 

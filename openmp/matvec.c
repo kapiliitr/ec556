@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
   if(argc !=4)
   {
-    printf("Usage: ./matvec <rows> <cols> <threads>\n");
+    printf("Usage: %s <rows> <cols> <threads>\n",argv[0]);
     exit(-1);
   }
 

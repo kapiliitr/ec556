@@ -1,6 +1,7 @@
 #include <stdio.h> 
 #include <stdlib.h> 
 #include "omp.h"
+#include <math.h>
 
 main(int argc, char *argv[]) 
 { 
@@ -8,7 +9,8 @@ main(int argc, char *argv[])
   unsigned short xi[3]; /* random number seed */ 
   int samples; /* samples Number of points to generate */ 
   double x,y; /* Coordinates of points */ 
-  double pi; /* Estimate of pi */ 
+  double pi; /* Estimate of pi */
+  double error; /* Percentage error of the calculated value  */
 
   if(argc != 3)
   {
@@ -35,6 +37,7 @@ main(int argc, char *argv[])
     } 
   } 
   pi = 4.0 * (double)count / (double)samples; 
-  printf("Count = %d, Samples = %d, Estimate of pi: %7.5f\n", count, samples, pi); 
+  error = fabs(pi-M_PI)*100/M_PI;
+  printf("Count = %d, Samples = %d, Error: %7.5f%\n", count, samples, error); 
 } 
 

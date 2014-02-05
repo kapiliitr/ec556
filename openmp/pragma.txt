@@ -2,8 +2,9 @@ Solution to Problem 17.2
 
 a. #pragma omp parallel for
 
-b. The total number of iterations is not known beforehand. 
-   So, it cannot be parallelized.
+b. The total number of iterations is not known beforehand as the
+   loop condition is not in canonical form. So, it cannot be 
+   parallelized.
 
 c. It depends on the implementation of the function foo(). 
    If it does not have any undesired effects-
@@ -24,4 +25,4 @@ g. i varies from k to 2*k => i-k varies from 0 to k. So, there
 
 h. i varies from k to n => i-k varies from 0 to n-k. If n>=2*k, 
    iterations become dependant on one another, so it cannot be 
-   paralleized.
+   parallelized.

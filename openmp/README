@@ -30,14 +30,14 @@ Type "make pi"
 To run pi-
 Type "./pi <number of samples> <number of threads>"
 
-pi.sh is a bash script which automatically compiles pi.c and executes it 
-for different values of samples and threads.
+pi.sh is a bash script which automatically compiles pi.c and executes 
+it for different values of samples and threads.
 
 To run pi.sh-
 Type "./pi.sh"
 
-The result shows the count of coordinates inside the circle, the number of
-samples, and the percentage error in the value of Pi.
+The result shows the count of coordinates inside the circle, the number 
+of samples, and the percentage error in the value of Pi.
 
 -------------------------------------------------------------------------
 
@@ -50,10 +50,48 @@ in both serial and parallel modes
 Type "make sieve"
 Type "./sieve <max num> <num threads>"
 
-sieve.sh is a bash script which automatically compiles sieve.c and executes it 
-for different values of num and threads.
+sieve.sh is a bash script which automatically compiles sieve.c and executes 
+it for different values of num and threads.
 
 Type "./sieve.sh"
 
 The result shows the max num, num of threads and speedup.
+
+-------------------------------------------------------------------------
+
+Q. 17.12 - Matrix vector multiplication
+
+There are 2 files namely : matvec.c and matvec.sh
+matvec.c contains the actual code which implements the Matrix vector mul
+in both serial and parallel modes
+
+Type "make matvec"
+Type "./matvec <rows> <cols> <threads>"
+
+matvec.sh is a bash script which automatically compiles matvec.c and executes 
+it for different dimensions of matrix and number of threads.
+
+Type "./mavitec.sh"
+
+The result shows the num of rows in the vector, num of threads and speedup.
+
+-------------------------------------------------------------------------
+
+Q. 17.13 - Gaussian Method with backward elimination
+
+There are 2 files namely : gauss.c and gauss.sh
+gauss.c contains the actual code which implements the Gaussian method for
+solving system of linear equations using pivoting and backward elimination.
+
+Type "make gauss"
+Type "./gauss <num vars> <num threads>"
+
+gauss.sh is a bash script which automatically compiles gauss.c and executes 
+it for different number of variables in the system of linear equations and
+number of threads.
+
+Type "./gauss.sh"
+
+The result shows the number of variables, num of threads and time
+taken to execute in seconds.
 

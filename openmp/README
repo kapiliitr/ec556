@@ -15,6 +15,9 @@ IIT Roorkee
 NOTE: All C files should have read permissions, All Bash files should 
 have read and execute permissions
 
+Type "make" to compile all files
+Type "make clean" to delete all object files and executables
+
 ----------------------------------------------------------------------
 
 Q. 17.2

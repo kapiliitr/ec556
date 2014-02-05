@@ -1,5 +1,7 @@
 #!/bin/bash
 
+make pi
+
 i=1
 n=10
 t=2
@@ -11,3 +13,5 @@ do
   t=$[t * 2]
   i=$[i + 1]
 done
+
+rm -rf pi.o pi
